@@ -239,7 +239,39 @@
     .contact-btn {
       margin: 5px 0;
     }
+.social-wrapper{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
 
+.social-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:15px 26px;
+  border-radius:14px;
+  font-weight:700;
+  font-size:18px;
+  color:#fff;
+  transition:.3s;
+}
+
+.social-btn:hover{
+  transform:translateY(-3px);
+  opacity:.9;
+}
+
+.instagram{
+  background:linear-gradient(45deg,#833ab4,#fd1d1d,#fcb045);
+}
+
+.tiktok{
+  background:#111;
+  border:1px solid #333;
+}
 
     }
 
@@ -276,7 +308,20 @@
       </div>
 
       <br>
-      
+      <!-- أزرار السوشال ميديا -->
+<div class="social-wrapper">
+
+  <a href="https://www.instagram.com/floor.kf" target="_blank" class="social-btn instagram">
+    <i class="fa-brands fa-instagram"></i>
+    Instagram
+  </a>
+
+  <a href="https://www.tiktok.com/@floorkf" target="_blank" class="social-btn tiktok">
+    <i class="fa-brands fa-tiktok"></i>
+    TikTok
+  </a>
+
+</div>
       <a href="files\دور علوي حي الملك فهد (طاب 2) (1).pdf" download class="pdf-btn">
         <i class="fa-solid fa-file-pdf"></i>
         تحميل PDF
