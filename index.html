@@ -226,6 +226,21 @@
         font-size:38px;
       }
 
+          /* تنسيق إضافي لترتيب أزرار التواصل */
+    .contact-wrapper {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap; /* لكي تنزل الأزرار تحت بعضها في الشاشات الصغيرة */
+      margin-bottom: 10px;
+    }
+
+    /* تعديل بسيط على زر الواتساب ليناسب التنسيق الجديد */
+    .contact-btn {
+      margin: 5px 0;
+    }
+
+
     }
 
   </style>
@@ -234,14 +249,11 @@
 
 <body>
 
+
   <!-- Hero -->
-
   <section class="hero">
-
     <div class="hero-content">
-
       <h1>دور فاخر للبيع</h1>
-
       <p>حي الملك فهد - الرياض</p>
 
       <a class="btn" href="#details">
@@ -250,26 +262,26 @@
 
       <br><br>
 
-      <a 
-        href="https://wa.me/966556638762"
-        target="_blank"
-        class="contact-btn"
-      >
-        <i class="fa-brands fa-whatsapp"></i>
-        تواصل واتساب
-      </a>
-      <br><br>
-      <a 
-        href="files\دور علوي حي الملك فهد (طاب 2) (1).pdf"
-        download
-        class="pdf-btn"
-      >
+      <!-- أزرار الواتساب -->
+      <div class="contact-wrapper">
+        <a href="https://wa.me/966510037229" target="_blank" class="contact-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          مشعل
+        </a>
+
+        <a href="https://wa.me/966556638762" target="_blank" class="contact-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          عبدالرحمن
+        </a>
+      </div>
+
+      <br>
+      
+      <a href="files\دور علوي حي الملك فهد (طاب 2) (1).pdf" download class="pdf-btn">
         <i class="fa-solid fa-file-pdf"></i>
-        تحميل  PDF
+        تحميل PDF
       </a>
-
     </div>
-
   </section>
 
 
